@@ -105,7 +105,7 @@ function initiateButtons() {
       $('.button-all').addClass("selected");
   		$('.button-exterior').removeClass("selected");
   		$('.button-interior').removeClass("selected");
-  		folder = siteName + "/images/gallery/";
+  		folder = "/images/gallery/";
   		updateImages();
   });
 
@@ -113,7 +113,7 @@ function initiateButtons() {
   	$('.button-all').removeClass("selected");
   	$('.button-exterior').addClass("selected");
   	$('.button-interior').removeClass("selected");
-  	folder = siteName + "/images/gallery/exterior/";
+  	folder = "/images/gallery/exterior/";
   	updateImages();
   });
 
@@ -121,7 +121,7 @@ function initiateButtons() {
   	$('.button-all').removeClass("selected");
   	$('.button-exterior').removeClass("selected");
   	$('.button-interior').addClass("selected");
-  	folder = siteName + "/images/gallery/interior/";
+  	folder = "/images/gallery/interior/";
   	updateImages();
   });
 }
