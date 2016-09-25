@@ -1,6 +1,6 @@
 var siteName = "https://awilmot19.github.io/murphs-painting";
 
-var folder = "siteName/images/gallery/";
+var folder = siteName + "/images/gallery/";
 var pageLoaded = 0;
 var galleryHeight;
 
@@ -72,7 +72,7 @@ function updateImages() {
                 render: function ($container, $newContent) {
                     $container.html($newContent);
                     $container.removeClass('is-exiting');
-                    folder = "siteName/images/gallery/";
+                    folder = siteName + "/images/gallery/";
                     pageLoaded = 0;
                     updateImages();
                     initiateButtons();
@@ -105,7 +105,7 @@ function initiateButtons() {
       $('.button-all').addClass("selected");
   		$('.button-exterior').removeClass("selected");
   		$('.button-interior').removeClass("selected");
-  		folder = "siteName/images/gallery/";
+  		folder = siteName + "/images/gallery/";
   		updateImages();
   });
 
@@ -113,7 +113,7 @@ function initiateButtons() {
   	$('.button-all').removeClass("selected");
   	$('.button-exterior').addClass("selected");
   	$('.button-interior').removeClass("selected");
-  	folder = "siteName/images/gallery/exterior/";
+  	folder = siteName + "/images/gallery/exterior/";
   	updateImages();
   });
 
@@ -121,7 +121,7 @@ function initiateButtons() {
   	$('.button-all').removeClass("selected");
   	$('.button-exterior').removeClass("selected");
   	$('.button-interior').addClass("selected");
-  	folder = "siteName/images/gallery/interior/";
+  	folder = siteName + "/images/gallery/interior/";
   	updateImages();
   });
 }
