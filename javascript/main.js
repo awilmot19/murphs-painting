@@ -1,6 +1,6 @@
 var siteName = "https://awilmot19.github.io/murphs-painting";
 
-var folder = siteName + "/images/gallery/";
+var folder = "/images/gallery/";
 var pageLoaded = 0;
 var galleryHeight;
 
@@ -72,7 +72,7 @@ function updateImages() {
                 render: function ($container, $newContent) {
                     $container.html($newContent);
                     $container.removeClass('is-exiting');
-                    folder = siteName + "/images/gallery/";
+                    folder = "/images/gallery/";
                     pageLoaded = 0;
                     updateImages();
                     initiateButtons();
