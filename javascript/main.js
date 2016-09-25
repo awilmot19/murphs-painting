@@ -1,4 +1,4 @@
-var folder = "/images/gallery/";
+var folder = "{{ site.github.url }}/images/gallery/";
 var pageLoaded = 0;
 var galleryHeight;
 
@@ -103,7 +103,7 @@ function initiateButtons() {
       $('.button-all').addClass("selected");
   		$('.button-exterior').removeClass("selected");
   		$('.button-interior').removeClass("selected");
-  		folder = "/images/gallery/";
+  		folder = "{{ site.github.url }}/images/gallery/";
   		updateImages();
   });
 
@@ -111,7 +111,7 @@ function initiateButtons() {
   	$('.button-all').removeClass("selected");
   	$('.button-exterior').addClass("selected");
   	$('.button-interior').removeClass("selected");
-  	folder = "/images/gallery/exterior/";
+  	folder = "{{ site.github.url }}/images/gallery/exterior/";
   	updateImages();
   });
 
@@ -119,7 +119,7 @@ function initiateButtons() {
   	$('.button-all').removeClass("selected");
   	$('.button-exterior').removeClass("selected");
   	$('.button-interior').addClass("selected");
-  	folder = "/images/gallery/interior/";
+  	folder = "{{ site.github.url }}/images/gallery/interior/";
   	updateImages();
   });
 }
