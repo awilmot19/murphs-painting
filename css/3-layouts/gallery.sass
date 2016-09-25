@@ -1,0 +1,61 @@
+
+.background
+  display: block
+  margin: 0 auto
+  background: #ddd
+  width: 100%
+  max-width: 1200px
+
+.photo-selector
+  width: 60%
+  display: block
+  margin: 0px auto 0px auto
+  padding: 20px 0 0 0
+  font-size: 0
+  position: relative
+
+  div
+    width: 20%
+    display: inline-block
+    font-size: 20px
+    text-align: center
+    background: #d0d0d0
+    padding: 15px 30px
+    border-bottom: 2px solid #777
+    vertical-align: bottom
+
+    &:hover
+
+      &:not(.selected)
+        background: #bbb
+
+  .button-all
+    border-top-left-radius: 30px
+    border-bottom-left-radius: 0px
+
+  .button-exterior
+    border-left: 2px solid #777
+    border-right: 2px solid #777
+
+  .button-interior
+    border-top-right-radius: 30px
+    border-bottom-right-radius: 0px
+
+  .menu-underline
+    background: #ddd
+    height: 0px
+    padding: 0
+
+  .selected
+    background: #aaa
+
+.outer-gallery
+  +outer-container
+  background: #ddd
+  padding: 0px 20px
+
+.gallery-item
+  +span-columns(3)
+  +omega(4n)
+  margin-top: 20px
+  margin-bottom: 20px

@@ -1,0 +1,122 @@
+
+*
+  font-family: Seravek
+  color: #444
+
+body, html
+  padding: 0
+  margin: 0
+
+.fadable
+  display: none
+
+html
+  background: #f0f0f0
+
+.nav-bar
+  background: #d66e01
+  width: 100%
+
+  ul
+    padding: 0
+    width: 80%
+    font-size: 0
+    display: block
+    margin: 0 auto
+    max-width: 1200px
+
+    li
+      width: 20%
+      display: inline-block
+      list-style-type: none
+
+      .contact-tab
+        border-right: 2px solid #c55d00
+
+      a
+        display: block
+        padding: 10px
+        font-size: 20px
+        text-align: center
+        color: #f0f0f0
+        text-decoration: none
+        transition-duration: 0.5s
+        border-left: 2px solid #c55d00
+
+        &:hover
+          background: #c55d00
+          color: #eeeeee
+
+.logo-main
+  display: block
+  width: 20%
+  margin: 0 auto
+  padding: 20px
+
+
+.outer
+  background: #ddd
+  +outer-container
+
+  .rule-line
+    +span-columns(11)
+    +shift(0.5)
+    border: 0
+    height: 1px
+    background-image: linear-gradient(to right, rgba(214, 110, 1, .95), rgba(18, 58, 202, 0.95), rgba(214, 110, 1, 0.95))
+
+.row
+  padding: 30px 0px
+  +span-columns(10)
+  +shift(1)
+
+  .feature-paragraph
+    +span-columns(5 of 10)
+
+  .feature-image
+    +span-columns(5 of 10)
+
+.row-service
+  +span-columns(3)
+  +shift(5)
+
+  h2
+    margin-bottom: 0
+
+.service-list
+  list-style-type: none
+  padding: 0
+  margin: 0 0 25px 0
+
+.bullet
+  position: relative
+  top: 2px
+  display: inline-block
+  padding-top: 13px
+  width: 15px
+
+.row-footer
+  background: #444
+  padding: 25px 35px
+  margin-bottom: 0
+
+  p
+    color: #eee
+
+  .copy
+    display: inline-block
+
+  .joke
+    text-align: center
+    position: relative
+    top: -5px
+    float: right
+    display: inline-block
+    margin: 0
+
+    em
+      color: #eee
+
+    .bullet
+      margin: 0 10px
+      padding: 0
