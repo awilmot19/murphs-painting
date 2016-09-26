@@ -1,6 +1,8 @@
+
 var siteName = "https://awilmot19.github.io/murphs-painting";
 
 var folder = "/murphs-painting/images/gallery/";
+var numImage = 26;
 var pageLoaded = 0;
 var galleryHeight;
 
@@ -85,19 +87,25 @@ function updateImages() {
 }(jQuery));
 
 function loadImages() {
-	$.ajax({
-			url : folder,
-			success: function (data) {
-					$(data).find("a").attr("href", function (i, val) {
-							if( val.match(/\.(jpe?g|png|gif)$/) ) {
-								$(".outer-gallery").append( "<img src='"+ folder + val +"' class='gallery-item'>");
-							}
-					});
-			}
-	});
-	$(".outer-gallery").fadeTo(700, 1, function () {
-		$(".outer-gallery").css({"height": "auto"});
-	});
+  for (var i = 1; i <= numImage; i++) {
+    $(".outer-gallery").append("<img src='" + folder + i +".jpg' class='gallery-item'>");
+  }
+  $(".outer-gallery").fadeTo(700, 1, function () {
+  	$(".outer-gallery").css({"height": "auto"});
+  });
+	// $.ajax({
+	// 		url : folder,
+	// 		success: function (data) {
+	// 				$(data).find("a").attr("href", function (i, val) {
+	// 						if( val.match(/\.(jpe?g|png|gif)$/) ) {
+	// 							$(".outer-gallery").append( "<img src='"+ folder + val +"' class='gallery-item'>");
+	// 						}
+	// 				});
+	// 		}
+	// });
+	// $(".outer-gallery").fadeTo(700, 1, function () {
+	// 	$(".outer-gallery").css({"height": "auto"});
+	// });
 }
 
 function initiateButtons() {
@@ -105,7 +113,8 @@ function initiateButtons() {
       $('.button-all').addClass("selected");
   		$('.button-exterior').removeClass("selected");
   		$('.button-interior').removeClass("selected");
-  		folder = "/images/gallery/";
+  		folder = "/murphs-painting/images/gallery/";
+      numImage = 26;
   		updateImages();
   });
 
@@ -114,6 +123,7 @@ function initiateButtons() {
   	$('.button-exterior').addClass("selected");
   	$('.button-interior').removeClass("selected");
   	folder = "/murphs-painting/images/gallery/exterior/";
+    numImage = 15;
   	updateImages();
   });
 
@@ -122,6 +132,7 @@ function initiateButtons() {
   	$('.button-exterior').removeClass("selected");
   	$('.button-interior').addClass("selected");
   	folder = "/murphs-painting/images/gallery/interior/";
+    numImage = 11;
   	updateImages();
   });
 }
