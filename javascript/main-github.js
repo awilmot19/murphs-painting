@@ -75,6 +75,7 @@ function updateImages() {
                     $container.html($newContent);
                     $container.removeClass('is-exiting');
                     folder = "/murphs-painting/images/gallery/";
+										numImage = 26;
                     pageLoaded = 0;
                     updateImages();
                     initiateButtons();
