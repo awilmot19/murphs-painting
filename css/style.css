@@ -398,15 +398,15 @@ html {
     .outer .profile-pic:last-child {
       margin-right: 0; }
 
-.outer-contact {
+.outer {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto; }
-  .outer-contact::after {
+  .outer::after {
     clear: both;
     content: "";
     display: block; }
-  .outer-contact .rule-line {
+  .outer .rule-line {
     float: left;
     display: block;
     margin-right: 2.35765%;
@@ -417,40 +417,40 @@ html {
     background-image: linear-gradient(to right, rgba(214, 110, 1, 0.95), rgba(18, 58, 202, 0.95), rgba(214, 110, 1, 0.95));
     margin-top: 8px;
     margin-bottom: 20px; }
-    .outer-contact .rule-line:last-child {
+    .outer .rule-line:last-child {
       margin-right: 0; }
-  .outer-contact .form-area {
+  .outer .form-area {
     float: left;
     display: block;
     margin-right: 2.35765%;
     width: 82.94039%;
     margin-left: 8.5298%; }
-    .outer-contact .form-area:last-child {
+    .outer .form-area:last-child {
       margin-right: 0; }
-    .outer-contact .form-area::after {
+    .outer .form-area::after {
       clear: both;
       content: "";
       display: block; }
-  .outer-contact #confirmation {
+  .outer #confirmation {
     font-size: 5vmin; }
-  .outer-contact #contact-form {
+  .outer #contact-form {
     float: left;
     display: block;
     margin-right: 2.84259%;
     width: 48.57871%; }
-    .outer-contact #contact-form:last-child {
+    .outer #contact-form:last-child {
       margin-right: 0; }
-    .outer-contact #contact-form .input {
+    .outer #contact-form .input {
       font-size: 1.5vmin; }
-  .outer-contact .contact-pic {
+  .outer .contact-pic {
     float: left;
     display: block;
     margin-right: 2.84259%;
     width: 48.57871%;
     margin-bottom: 20px; }
-    .outer-contact .contact-pic:last-child {
+    .outer .contact-pic:last-child {
       margin-right: 0; }
-  .outer-contact h3 {
+  .outer h3 {
     float: left;
     display: block;
     margin-right: 2.35765%;
@@ -462,13 +462,13 @@ html {
     font-size: 40px;
     display: block;
     color: #d66e01; }
-    .outer-contact h3:last-child {
+    .outer h3:last-child {
       margin-right: 0; }
-    .outer-contact h3::after {
+    .outer h3::after {
       clear: both;
       content: "";
       display: block; }
-    .outer-contact h3 .phone-number {
+    .outer h3 .phone-number {
       color: #d66e01; }
 
 /*# sourceMappingURL=style.css.map */
