@@ -74,7 +74,7 @@ function updateImages() {
                 render: function ($container, $newContent) {
                     $container.html($newContent);
                     $container.removeClass('is-exiting');
-                    folder = "murphs-painting/images/gallery/";
+                    folder = "/murphs-painting/images/gallery/";
                     pageLoaded = 0;
                     updateImages();
                     initiateButtons();
