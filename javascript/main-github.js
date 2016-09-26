@@ -87,12 +87,19 @@ function updateImages() {
 }(jQuery));
 
 function loadImages() {
-  for (var i = 1; i <= numImage; i++) {
-    $(".outer-gallery").append("<img src='" + folder + i +".jpg' class='gallery-item'>");
-  }
   $(".outer-gallery").fadeTo(700, 1, function () {
-  	$(".outer-gallery").css({"height": "auto"});
+    $(".outer-gallery").css({"height": "auto"});
   });
+  for (var i = 1; i <= numImage; i++) {
+    // create a closure to preserve the value of "i"
+    (function(i){
+
+      window.setTimeout(function(){
+        $(".outer-gallery").append("<img src='" + folder + i +".jpg' class='gallery-item'>").fadeIn();
+      }, i * 100);
+
+    }(i));
+  }
 	// $.ajax({
 	// 		url : folder,
 	// 		success: function (data) {
