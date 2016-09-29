@@ -126,10 +126,10 @@ html {
   animation-name: moveOutToLeft; }
 
 * {
-  font-family: "Raleway", sans-serif;
   color: #444; }
 
 body, html {
+  font-family: "Raleway", sans-serif;
   padding: 0;
   margin: 0; }
 
