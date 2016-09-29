@@ -126,6 +126,7 @@ html {
   animation-name: moveOutToLeft; }
 
 * {
+  font-family: "Raleway", sans-serif;
   color: #444; }
 
 body, html {
@@ -140,7 +141,8 @@ html {
 
 .nav-bar {
   background: #d66e01;
-  width: 100%; }
+  width: 100%;
+  font-family: "Signika", sans-serif; }
   .nav-bar ul {
     padding: 0;
     width: 80%;
