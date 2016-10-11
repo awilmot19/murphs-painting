@@ -1,0 +1,29 @@
+{% include head.html %}
+</head>
+
+<body id="gallery">
+
+  <div id="main">
+
+    {% include header.html %}
+    <div class="sceneElement" data-viewport="0">
+      <section class="background">
+        <div class="photo-selector">
+          <div class="menu-underline"></div>
+          <div class="button-all selected">All</div>
+          <div class="button-exterior">Exterior</div>
+          <div class="button-interior">Interior</div>
+          <div class="menu-underline"></div>
+        </div>
+
+        <div class="outer-gallery"></div>
+      </section>
+
+      {% include footer.html %}
+    </div>
+  </div>
+</body>
+
+{% include transitions-js.html %}
+
+<!-- <script type="text/javascript" src="/javascript/images.js"></script> -->

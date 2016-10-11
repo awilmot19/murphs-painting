@@ -171,9 +171,9 @@ html {
 
 .logo-main {
   display: block;
-  width: 12%;
+  width: 20%;
   margin: 0 auto;
-  padding: 1%; }
+  padding: 20px; }
 
 .outer {
   background: #ddd;
@@ -330,6 +330,29 @@ html {
   .gallery-item:nth-child(4n+1) {
     clear: left; }
 
+.outer-test {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  background: #ddd;
+  padding-bottom: 10px;
+  padding-top: 10px; }
+  .outer-test::after {
+    clear: both;
+    content: "";
+    display: block; }
+  .outer-test .rule-line {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 91.4702%;
+    margin-left: 4.2649%;
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(214, 110, 1, 0.95), rgba(18, 58, 202, 0.95), rgba(214, 110, 1, 0.95)); }
+    .outer-test .rule-line:last-child {
+      margin-right: 0; }
+
 .testimonial {
   float: left;
   display: block;
@@ -341,104 +364,112 @@ html {
   border-radius: 5px;
   background-color: #fbfbfb;
   margin-bottom: 20px;
-  margin-top: 20px;
-  display: block; }
+  margin-top: 20px; }
   .testimonial:last-child {
     margin-right: 0; }
-  .testimonial p {
-    width: 100%; }
-  .testimonial .nametag {
-    display: block;
-    font-size: 18px;
-    font-weight: 800; }
 
-#about .outer {
+.testimonial .nametag {
+  font-size: 18px;
+  font-weight: 800; }
+
+.outer {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 0;
   margin-bottom: 0; }
-  #about .outer::after {
+  .outer::after {
     clear: both;
     content: "";
     display: block; }
-  #about .outer p {
+  .outer p {
     float: left;
     display: block;
     margin-right: 2.35765%;
     width: 48.82117%;
     padding: 20px 10px 20px 20px; }
-    #about .outer p:last-child {
+    .outer p:last-child {
       margin-right: 0; }
-  #about .outer .profile-pic {
+  .outer .profile-pic {
     float: left;
     display: block;
     margin-right: 2.35765%;
     width: 48.82117%;
     padding: 20px 20px 20px 10px; }
-    #about .outer .profile-pic:last-child {
+    .outer .profile-pic:last-child {
       margin-right: 0; }
 
-#contact {
-  display: block; }
-
-.form-area {
-  float: left;
-  display: block;
-  margin-right: 2.35765%;
-  width: 82.94039%;
-  margin-left: 8.5298%; }
-  .form-area:last-child {
-    margin-right: 0; }
-  .form-area::after {
+.outer {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto; }
+  .outer::after {
     clear: both;
     content: "";
     display: block; }
-
-#contact-form {
-  float: left;
-  display: block;
-  margin-right: 2.84259%;
-  width: 48.57871%; }
-  #contact-form:last-child {
-    margin-right: 0; }
-  #contact-form #confirmation {
-    font-size: 5vmin;
-    display: none;
-    position: absolute;
-    width: 30%;
-    text-align: center; }
-  #contact-form .input {
-    font-size: 1.5vmin; }
-
-.contact-pic {
-  float: left;
-  display: block;
-  margin-right: 2.84259%;
-  width: 48.57871%;
-  margin-bottom: 20px; }
-  .contact-pic:last-child {
-    margin-right: 0; }
-
-h3 {
-  float: left;
-  display: block;
-  margin-right: 2.35765%;
-  width: 65.88078%;
-  margin-left: 17.05961%;
-  text-align: center;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  font-size: 40px;
-  display: block;
-  color: #d66e01; }
-  h3:last-child {
-    margin-right: 0; }
-  h3::after {
-    clear: both;
-    content: "";
-    display: block; }
-  h3 .phone-number {
+  .outer .rule-line {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 91.4702%;
+    margin-left: 4.2649%;
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(214, 110, 1, 0.95), rgba(18, 58, 202, 0.95), rgba(214, 110, 1, 0.95));
+    margin-top: 8px;
+    margin-bottom: 20px; }
+    .outer .rule-line:last-child {
+      margin-right: 0; }
+  .outer .form-area {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 82.94039%;
+    margin-left: 8.5298%; }
+    .outer .form-area:last-child {
+      margin-right: 0; }
+    .outer .form-area::after {
+      clear: both;
+      content: "";
+      display: block; }
+  .outer #confirmation {
+    font-size: 5vmin; }
+  .outer #contact-form {
+    float: left;
+    display: block;
+    margin-right: 2.84259%;
+    width: 48.57871%; }
+    .outer #contact-form:last-child {
+      margin-right: 0; }
+    .outer #contact-form .input {
+      font-size: 1.5vmin; }
+  .outer .contact-pic {
+    float: left;
+    display: block;
+    margin-right: 2.84259%;
+    width: 48.57871%;
+    margin-bottom: 20px; }
+    .outer .contact-pic:last-child {
+      margin-right: 0; }
+  .outer h3 {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 65.88078%;
+    margin-left: 17.05961%;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 40px;
+    display: block;
     color: #d66e01; }
+    .outer h3:last-child {
+      margin-right: 0; }
+    .outer h3::after {
+      clear: both;
+      content: "";
+      display: block; }
+    .outer h3 .phone-number {
+      color: #d66e01; }
 
 /*# sourceMappingURL=style.css.map */
