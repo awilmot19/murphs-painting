@@ -129,9 +129,13 @@ html {
   color: #444; }
 
 body, html {
-  font-family: "Raleway", sans-serif;
+  font-family: "Open Sans", sans-serif;
   padding: 0;
   margin: 0; }
+
+body {
+  background: url("/images/background-house1.jpg") no-repeat center 0px fixed;
+  background-size: cover; }
 
 .fadable {
   display: none; }
@@ -142,7 +146,7 @@ html {
 .nav-bar {
   background: #d66e01;
   width: 100%;
-  font-family: "Signika", sans-serif; }
+  font-family: "Roboto", sans-serif; }
   .nav-bar ul {
     padding: 0;
     width: 80%;
@@ -176,7 +180,7 @@ html {
   padding: 20px; }
 
 .outer {
-  background: #ddd;
+  background: rgba(224, 224, 224, 0.9);
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto; }
@@ -267,7 +271,7 @@ html {
 .background {
   display: block;
   margin: 0 auto;
-  background: #ddd;
+  background: rgba(224, 224, 224, 0.9);
   width: 100%;
   max-width: 1200px; }
 
@@ -309,7 +313,6 @@ html {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
-  background: #ddd;
   padding: 0px 20px; }
   .outer-gallery::after {
     clear: both;
@@ -334,7 +337,7 @@ html {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
-  background: #ddd;
+  background: rgba(224, 224, 224, 0.9);
   padding-bottom: 10px;
   padding-top: 10px; }
   .outer-test::after {

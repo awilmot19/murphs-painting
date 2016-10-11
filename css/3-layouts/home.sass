@@ -3,9 +3,14 @@
   color: #444
 
 body, html
-  font-family: 'Raleway', sans-serif
+  font-family: 'Open Sans', sans-serif
   padding: 0
   margin: 0
+
+body
+  background: url("/images/background-house1.jpg") no-repeat center 0px fixed
+  background-size: cover
+  //background-repeat: no-repeat
 
 .fadable
   display: none
@@ -16,7 +21,7 @@ html
 .nav-bar
   background: #d66e01
   width: 100%
-  font-family: 'Signika', sans-serif
+  font-family: 'Roboto', sans-serif
 
   ul
     padding: 0
@@ -56,7 +61,7 @@ html
 
 
 .outer
-  background: #ddd
+  background: rgba(224,224,224,.9)
   +outer-container
 
   .rule-line
@@ -76,6 +81,9 @@ html
 
   .feature-image
     +span-columns(5 of 10)
+
+  p
+    //background: rgba(200,200,200,0.7)
 
 .row-service
   +span-columns(3)
