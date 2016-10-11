@@ -1,44 +1,39 @@
 
-.outer
-  +outer-container
+#contact
+  display: block
 
-  .rule-line
-    +span-columns(11)
-    +shift(0.5)
-    border: 0
-    height: 1px
-    background-image: linear-gradient(to right, rgba(214, 110, 1, .95), rgba(18, 58, 202, 0.95), rgba(214, 110, 1, 0.95))
-    margin-top: 8px
-    margin-bottom: 20px
+.form-area
+  +span-columns(10)
+  +shift(1)
+  +clearfix
 
-  .form-area
-    +span-columns(10)
-    +shift(1)
-    +clearfix
+#contact-form
+  +span-columns(5 of 10)
 
   #confirmation
     font-size: 5vmin
-
-  #contact-form
-    +span-columns(5 of 10)
-
-    .input
-      font-size: 1.5vmin
-
-  .contact-pic
-    +span-columns(5 of 10)
-    margin-bottom: 20px
-
-  h3
-    +span-columns(8)
-    +shift(2)
-    +clearfix
+    display: none
+    position: absolute
+    width: 30%
     text-align: center
-    margin-top: 10px
-    margin-bottom: 10px
-    font-size: 40px
-    display: block
-    color: #d66e01
 
-    .phone-number
-      color: #d66e01
+  .input
+    font-size: 1.5vmin
+
+.contact-pic
+  +span-columns(5 of 10)
+  margin-bottom: 20px
+
+h3
+  +span-columns(8)
+  +shift(2)
+  +clearfix
+  text-align: center
+  margin-top: 10px
+  margin-bottom: 10px
+  font-size: 40px
+  display: block
+  color: #d66e01
+
+  .phone-number
+    color: #d66e01

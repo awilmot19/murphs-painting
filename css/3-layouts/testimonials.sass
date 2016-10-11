@@ -1,17 +1,4 @@
 
-.outer-test
-  +outer-container
-  background: #ddd
-  padding-bottom: 10px
-  padding-top: 10px
-
-  .rule-line
-    +span-columns(11)
-    +shift(0.5)
-    border: 0
-    height: 1px
-    background-image: linear-gradient(to right, rgba(214, 110, 1, .95), rgba(18, 58, 202, 0.95), rgba(214, 110, 1, 0.95))
-
 .testimonial
   +span-columns(10)
   +shift(1)
@@ -21,7 +8,12 @@
   background-color: #fbfbfb
   margin-bottom: 20px
   margin-top: 20px
+  display: block
 
-.testimonial .nametag
-  font-size: 18px
-  font-weight: 800
+  p
+    width: 100%
+
+  .nametag
+    display: block
+    font-size: 18px
+    font-weight: 800
